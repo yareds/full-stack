@@ -1,0 +1,64 @@
+body {
+    background: #37bad1;
+    color: white;
+    
+}
+button {
+    width: 130px;
+    height: 50px;
+    border: 3px soldi white;
+    border-radius: 70px;
+    background: #321f9b;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    
+}
+.wrapper {
+    font-size: 100px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+.wrapper > p {
+    font-family:'Times New Roman', Times, serif;
+}
+.wrapper > h3 {
+    font-family: Edwardian Script ITC, Kunstler Script ;
+    background-color: #4129ad;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+}
+
+button:hover {
+    background:rgb(55, 34, 148);
+    color:#e0e0e0;
+    border-radius:35px;
+    box-shadow: 6px -2px 8px #f7f3f3, -2px 6px 8px #f8f4f4;
+    transition: 0.2s;
+    transition:0.2s;
+    
+}
+/* #stopwatch {
+    font-size: 100px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+}
+
+#buttons {
+    position: absolute;
+    top: 55%;
+    left: 48.4%;
+    transform: translate(-51.6%, -45%);
+}
+#buttons li {
+    display: inline;
+    padding-left: 10px;
+}
+
+
+ */
