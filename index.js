@@ -22,14 +22,14 @@ window.onload = function () {
 
    // })
     buttonStart.addEventListener("click", () => {
-        clearInterval(interval);
-        interval = setInterval (startTimer, 10)
+       clearInterval(interval);
+        interval = setInterval (startTimer, 10) // round the function upto 1000 milli seconds
     });
     buttonStop.addEventListener("click", () => {
         clearInterval(interval);
     });
     buttonReset.addEventListener("click", () => {
-        clearInterval(interval);
+       // clearInterval(interval);
         appendTens = "00";
         appendSeconds = "00";
         appendDays = "00";
@@ -39,11 +39,11 @@ window.onload = function () {
 
     });
     
-    buttonStart.onclick = function(){
+   /*  buttonStart.onclick = function(){
         startTimer();
-      // console.log("");
-       //console.log(setInterval (0, 10));
-   } 
+       console.log("");
+       console.log(setInterval (0, 10));
+   }  */
    buttonReset.onclick = function(){
     resetTimer();
 
@@ -54,7 +54,6 @@ window.onload = function () {
         tens.innerHTML = "0" + appendTens;
     }
 
-    
     if(appendTens > 9){
         tens.innerHTML = appendTens;
     
