@@ -29,7 +29,7 @@ window.onload = function () {
         clearInterval(interval);
     });
     buttonReset.addEventListener("click", () => {
-       // clearInterval(interval);
+        clearInterval(interval);
         appendTens = "00";
         appendSeconds = "00";
         appendDays = "00";

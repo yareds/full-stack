@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <div>
+    sample header
+ </div>
+ 
+ <div id="formPlaceholder">
+ </div>
+ 
+ <div>
+    sample footer
+ </div>
+ 
+ <button onclick="showForm()">
+   Show my form
+ </button>
+  <!-- <div id = "myDiv" class="header">
+    test
+  </div>
+  <button id="ok" onclick="toggleClassName()">
+  ok
+  </button> -->
+  
+  <script>
+    const showForm = () => {
+	let myForm = document.createElement("div");
+    myForm.innerHTML = "Name:<input type='text' name='name'><br/>Comment:<br/><textarea rows='5' cols='80'></textarea>";
+    document.body.appendChild(myForm);
+   let formText = document.getElementById("formPlaceholder");
+   formText.appendChild(myForm);
+  }
+    //"Name:&nbsp;<input type='text' name='name'><br/>Comment:<br/><textarea rows='5' cols='80'></textarea>";
+    // TO-DO – add the above elements (elements that are inside myForm) to the element with the id "formPlaceholder"
+
+  
+    /* const toggleClassName = () => {
+      header1 = document.getElementsByClassName("header")[0]
+      header1.classList.toggle("active")
+    } */
+  </script>
+</body>
+</html>
